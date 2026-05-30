@@ -11,6 +11,8 @@ developers are required to adhere to these rules whenever they modify applicatio
 
 ## Domain Boundaries
 
+- Add a new domain only when the user explicitly requests it. The agent may always propose a
+  new domain, but such a proposal must be accepted by the user before it is created.
 - Respect the existing domain boundaries enforced by Sheriff.
 - Never import implementation details from the private internals of another feature or domain.
 - Cross-domain communication must occur exclusively through the public APIs configured in
