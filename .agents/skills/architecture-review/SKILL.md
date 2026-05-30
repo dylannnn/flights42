@@ -1,5 +1,5 @@
 ---
-name: review-angular-architecture
+name: architecture-review
 description: Review Angular code against the repository architecture rules in docs/architecture.md, including Sheriff boundaries, layering, feature slicing, shared code, and state management conventions.
 ---
 
