@@ -52,7 +52,10 @@ developers are required to adhere to these rules whenever they modify applicatio
   move it down to a lower layer.
 - If technical code from one feature must be reused by a feature in a different domain,
   move it down to a lower layer of the shared area.
-  - For domain-specific code, consult the user first.
+  - If the code might be domain-specific, the agent MUST ask for explicit user approval
+    before moving it to `shared`.
+  - Explicit approval means a clear confirmation in the current chat.
+  - Without explicit approval, keep the code in the current domain and propose alternatives.
 
 ## Data Access Services
 
@@ -66,6 +69,13 @@ developers are required to adhere to these rules whenever they modify applicatio
 
 - Promote code to a shared area only when at least two independent features require it.
 - Avoid premature shared abstractions.
+
+## Pre-Change Checklist (Shared Moves)
+
+- Before moving code to `shared`, verify cross-domain reuse is truly required.
+- Classify the code as technical or domain-specific, and state that classification explicitly.
+- If there is any domain-specific ambiguity, obtain explicit user approval first.
+- Record the chosen option and rationale in the response.
 
 ## State Management
 
