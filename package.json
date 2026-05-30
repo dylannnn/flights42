@@ -9,7 +9,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "format": "prettier --write \"**/*.{ts,html,scss,css,json,md}\"",
-    "prepare": "husky"
+    "sync:agent-config": "node scripts/sync-agent-config.mjs",
+    "prepare": "husky && npm run sync:agent-config"
   },
   "lint-staged": {
     "*": "prettier --write --ignore-unknown"

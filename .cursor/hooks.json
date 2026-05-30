@@ -3,7 +3,7 @@
   "hooks": {
     "stop": [
       {
-        "command": "npx ng lint flights && npx ng test flights --configuration ci && npx ng build flights",
+        "command": "node scripts/ci-checks.mjs",
         "timeout": 600,
         "loop_limit": 3
       }
