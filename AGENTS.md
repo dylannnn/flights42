@@ -56,8 +56,3 @@ You are an expert in TypeScript, Angular, and scalable web application developme
 - Design services around a single responsibility
 - Use the `providedIn: 'root'` option for singleton services
 - Use the `inject()` function instead of constructor injection
-
-## Validation Workflow
-
-- After every substantive code change, run `npm run lint` before finishing the task.
-- Report the lint result explicitly in the final response.
